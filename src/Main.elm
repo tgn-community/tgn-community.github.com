@@ -1,6 +1,7 @@
 module Main exposing (main)
 
 import Html exposing (..)
+import Html.Attributes exposing (..)
 import Browser
 
 main : Program () Model msg
@@ -14,6 +15,6 @@ type alias Model = {}
 
 view n = {
     title = "Taganrog Developer community",
-    body = [text "Taganrog Developer Community site. Work in progress."]
+    body = [text "Taganrog Developer Community site. Work in progress.", br [] [], a [href "https://github.com/tgn-community/tgn-community.github.io"] [text "This is Open Source project"]]
   }
 
